@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مرحبًا بك في موقع تعلم الاختراق</title>
+    <style>
+        /* تنسيق الصفحة */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1a1a1a;
+            color: #fff;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* تنسيق الرأس */
+        header {
+            padding: 20px;
+            background-color: #333;
+            color: #4CAF50;
+            font-size: 1.5em;
+            animation: slideIn 1s ease-out;
+        }
+
+        /* رسالة الترحيب */
+        .welcome-message {
+            margin-top: 20px;
+            font-size: 1.2em;
+            animation: fadeIn 2s ease-out;
+        }
+
+        /* الأزرار */
+        .button {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 15px 30px;
+            background-color: #4CAF50;
+            color: #fff;
+            font-size: 1.2em;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: transform 0.3s;
+            animation: pulse 1.5s infinite;
+        }
+
+        .button:hover {
+            transform: scale(1.1);
+            background-color: #45a049;
+        }
+
+        /* قسم "ما هو الهكر" */
+        .hacker-info, .hacker-types, .hacker-methods, .kali-benefits, .account-hacking-methods, .end-section, .support-section {
+            display: none;
+            margin-top: 40px;
+            font-size: 1em;
+            line-height: 1.6;
+            animation: slideInUp 1s ease-out;
+            max-height: 500px;
+            overflow-y: scroll;
+            padding: 15px;
+            background-color: #333;
+            border-radius: 8px;
+            scrollbar-width: thin;
+            scrollbar-color: #4CAF50 #333;
+        }
+
+        .hacker-info::-webkit-scrollbar, .hacker-types::-webkit-scrollbar, .hacker-methods::-webkit-scrollbar, .kali-benefits::-webkit-scrollbar, .account-hacking-methods::-webkit-scrollbar, .end-section::-webkit-scrollbar, .support-section::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        .hacker-info::-webkit-scrollbar-thumb, .hacker-types::-webkit-scrollbar-thumb, .hacker-methods::-webkit-scrollbar-thumb, .kali-benefits::-webkit-scrollbar-thumb, .account-hacking-methods::-webkit-scrollbar-thumb, .end-section::-webkit-scrollbar-thumb, .support-section::-webkit-scrollbar-thumb {
+            background-color: #4CAF50;
+            border-radius: 8px;
+        }
+
+        .hacker-info::-webkit-scrollbar-track, .hacker-types::-webkit-scrollbar-track, .hacker-methods::-webkit-scrollbar-track, .kali-benefits::-webkit-scrollbar-track, .account-hacking-methods::-webkit-scrollbar-track, .end-section::-webkit-scrollbar-track, .support-section::-webkit-scrollbar-track {
+            background-color: #333;
+        }
+
+        /* الحركات */
+        @keyframes slideIn {
+            from { transform: translateY(-100%); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+
+        @keyframes slideInUp {
+            from { transform: translateY(20px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        مرحبًا بك في موقعي الجديد
+    </header>
+
+    <div class="welcome-message">
+        مرحبًا بك، إذا كنت مهتمًا في مجال الاختراق والأمن السيبراني، فهذا الموقع يقدم معلومات عن هذا الموضوع.
+    </div>
+
+    <!-- الأزرار الجديدة -->
+    <a href="javascript:void(0);" class="button" onclick="toggleVisibility('hacker-info')">ما هو الهكر؟</a>
+    <a href="javascript:void(0);" class="button" onclick="toggleVisibility('hacker-types')">أنواع الهكر</a>
+    <a href="javascript:void(0);" class="button" onclick="toggleVisibility('hacker-methods')">كيف يمكن للهاكرز الاختراق؟</a>
+    <a href="javascript:void(0);" class="button" onclick="toggleVisibility('kali-benefits')">مزايا كالي لينكس</a>
+    <a href="javascript:void(0);" class="button" onclick="toggleVisibility('account-hacking-methods')">طرق اختراق الحسابات</a>
+    <a href="javascript:void(0);" class="button" onclick="toggleVisibility('end-section')">النهاية</a>
+    <a href="javascript:void(0);" class="button" onclick="toggleVisibility('support-section')">الدعم</a>
+
+    <!-- قسم "ما هو الهكر؟" -->
+    <div id="hacker-info" class="hacker-info">
+        <h2>ما هو الهكر؟</h2>
+        <p>الهكر هو شخص يتمتع بمهارات عالية في البرمجة و الشبكات و أنظمة الكمبيوتر. يتميز الهاكر بقدرته على فهم كيفية عمل الأنظمة التكنولوجية واكتشاف الثغرات فيها. لا يعد الهاكر مجرد شخص يقوم باختراق الأنظمة بشكل عشوائي أو غير قانوني، بل هو شخص متخصص يمتلك مهارات تقنية متقدمة تمكّنه من التفاعل مع هذه الأنظمة بطرق غير تقليدية، سواء كانت للغرض الإيجابي أو السلبي.</p>
+        <p><strong>الهكر: ليس بالضرورة شخص سيئ</strong><br>
+        غالبًا ما يرتبط مصطلح "الهاكر" في أذهان الكثيرين بالأنشطة غير القانونية مثل الاختراق والسرقة والتخريب، لكن الحقيقة أن الهكر ليس دائمًا شخصًا ضارًا. في الواقع، هناك أنواع متعددة من الهكر، وكل نوع له أهدافه وطرقه الخاصة.</p>
+    </div>
+
+    <!-- قسم "أنواع الهكر" -->
+    <div id="hacker-types" class="hacker-types">
+        <h2>أنواع الهكر</h2>
+        <p><strong>1. الهاكر الجيد (Ethical Hacker أو القبعة البيضاء)</strong><br>
+        هو الهاكر الذي يستخدم مهاراته في مجال البرمجة والشبكات لاكتشاف الثغرات الأمنية في الأنظمة بهدف تحسين الأمان وحماية الأنظمة من الهجمات الضارة.</p>
+        <p><strong>الهدف:</strong> 
+        يساعد الشركات والمؤسسات في تحسين الأمان وحماية بياناتها من الهجمات.</p>
+        <p><strong>2. الهاكر السيء (Malicious Hacker أو القبعة السوداء)</strong><br>
+        هو الشخص الذي يستخدم مهاراته في الاختراق لأغراض ضارة وغير قانونية. يسعى لإلحاق الأذى أو استغلال الثغرات لتحقيق مكاسب شخصية.</p>
+        <p><strong>الهدف:</strong> 
+        سرقة البيانات والتخريب والابتزاز.</p>
+        <p><strong>3. الهاكر الرمادي (Gray Hat Hacker)</strong><br>
+        هو الشخص الذي يقع بين الهاكر الجيد والسيء، حيث يقوم باختبار الأمان دون إذن لكنه لا يهدف بالضرورة إلى التخريب أو السرقة.</p>
+        <p><strong>الهدف:</strong> 
+        إيجاد الثغرات الأمنية دون إذن رسمي، وقد يطلب مكافأة مقابل ذلك.</p>
+    </div>
+
+    <!-- قسم "كيف يمكن للهاكرز الاختراق؟" -->
+    <div id="hacker-methods" class="hacker-methods">
+        <h2>كيف يمكن للهاكرز الاختراق؟</h2>
+        <p>يمكن للهكرز الاختراق مثلًا حسابات مواقع التواصل الاجتماعي أو الوايفاي أو حسابات الألعاب أو اختراق الهواتف أو المواقع أو التطبيقات. يتم ذلك بفضل أدوات وأنظمة خاصة، ومن أبرز الأنظمة المستخدمة "كالي لينكس".</p>
+    </div>
+
+    <!-- قسم "مزايا كالي لينكس" -->
+    <div id="kali-benefits" class="kali-benefits">
+        <h2>مزايا كالي لينكس</h2>
+        <p>كالي لينكس هو نضام تشغيل من خلالو يمكن متلا:</p>
+        <p> صنع فيروس مدمر او صنع مواقع مزقية او صفحات احتيالية و من خلالو يمكن معرفة مكان اي شخص و ايضا يمكن اختراق انضمة التشغيل او الهواتف و يمكن ايضا اختراق شبكات الوايفاي و اختراق الحسابات و العديد من الاشياء.</p>
+        <p>:</p>
+        <p>كالي لينكس مفتوح المصدر ومجاني تمامًا، مما يعني أن أي شخص يمكنه تنزيله وتعديله بحسب احتياجاته. يتضمن النظام الأكواد المصدرية التي يمكن للمطورين التفاعل معها وتخصيصها.</p>
+    </div>
+
+    <!-- قسم "طرق اختراق الحسابات" -->
+    <div id="account-hacking-methods" class="account-hacking-methods">
+        <h2>طرق اختراق الحسابات مثل البنك أو مواقع التواصل الاجتماعي وحماية نفسك من الهجمات الإلكترونية</h2>
+        <p>1. التصيد الاحتيالي (Phishing)</p>
+        <p><strong>الوصف:</strong><br>
+        يُعد التصيد الاحتيالي من الطرق الشائعة والأسهل بالنسبة للمخترقين. يستغل المخترق هنا الثقة ويقوم بإرسال روابط أو رسائل بريد إلكتروني تبدو وكأنها صادرة من مصادر موثوقة مثل البنوك أو منصات التواصل الاجتماعي، تطلب من المستخدم إدخال معلوماته الشخصية أو كلمات المرور.</p>
+        <p><strong>مثال:</strong><br>
+        تخيل أنك تتلقى رسالة بريد إلكتروني من عنوان يبدو وكأنه تابع لبنكك، وتخبرك بوجود نشاط غير معتاد في حسابك، وتطلب منك الدخول إلى رابط لتأكيد بياناتك. بمجرد إدخال المعلومات، يستلمها المخترق ويستخدمها للوصول إلى حسابك.</p>
+        <p><strong>نصائح للوقاية:</strong><br>
+        - لا تضغط على روابط مشبوهة أو تفتح مرفقات من مصادر غير معروفة.<br>
+        - تحقق دائمًا من عنوان البريد الإلكتروني واسم النطاق بعناية.<br>
+        - استخدم التحقق بخطوتين (2FA) لتعزيز أمان الحساب.</p>
+        <p>2. الهندسة الاجتماعية (Social Engineering)</p>
+        <p><strong>الوصف:</strong><br>
+        تعتمد الهندسة الاجتماعية على خداع المستخدم ليقدم معلوماته الشخصية أو كلمات المرور. يعتمد المخترق هنا على التواصل المباشر أو غير المباشر لإقناع الضحية بأنه شخص موثوق، مما يجعل المستخدم يكشف بياناته بنفسه.</p>
+        <p><strong>مثال:</strong><br>
+        يمكن للمخترق أن يتصل بك ويدعي أنه من خدمة العملاء الخاصة بموقع ما، ويطلب منك بعض التفاصيل كإعادة تعيين كلمة المرور أو الإجابة عن أسئلة الأمان.</p>
+        <p><strong>نصائح للوقاية:</strong><br>
+        - لا تشارك معلوماتك الشخصية عبر الهاتف أو البريد الإلكتروني إلا بعد التحقق من هوية المتصل.<br>
+        - لا تثق بأحد بسهولة، خاصة من يطلب بياناتك الحساسة.</p>
+        <p>3. القوة الغاشمة (Brute Force)</p>
+        <p><strong>الوصف:</strong><br>
+        يعتمد الهكر في هذه الطريقة على استخدام برامج تقوم بتجربة العديد من كلمات المرور المحتملة حتى يتمكن من الوصول إلى الحساب.</p>
+        <p><strong>مثال:</strong><br>
+        استخدام برامج مثل "Hydra" أو "John the Ripper" لمحاولة تخمين كلمة المرور.</p>
+        <p><strong>نصائح للوقاية:</strong><br>
+        - استخدم كلمات مرور معقدة تحتوي على أحرف كبيرة وصغيرة وأرقام ورموز.<br>
+        - تفعيل التحقق بخطوتين.</p>
+        <p>4. استغلال الثغرات الأمنية (Exploits)</p>
+        <p><strong>الوصف:</strong><br>
+        يعتمد الهكر في هذه الطريقة على العثور على ثغرة أمنية في النظام أو التطبيق، ثم استغلالها للوصول إلى الحساب.</p>
+        <p><strong>مثال:</strong><br>
+        استغلال الثغرات في تطبيقات الويب أو البرمجيات.</p>
+        <p><strong>نصائح للوقاية:</strong><br>
+        - تأكد من تحديث جميع التطبيقات والأنظمة بشكل دوري لتجنب الثغرات الأمنية.</p>
+        <p>5. الشبكات الاجتماعية (Social Media Hacking)</p>
+        <p><strong>الوصف:</strong><br>
+        يمكن للمخترق استخدام معلومات متاحة على وسائل التواصل الاجتماعي مثل تواريخ الميلاد أو أسماء الأم لتخمين كلمات المرور أو الإجابة على أسئلة الأمان.</p>
+        <p><strong>مثال:</strong><br>
+        قد يتسلل الهكر إلى حسابك عبر حسابك في "فيسبوك" أو "إنستجرام" للحصول على معلومات حساسة.</p>
+        <p><strong>نصائح للوقاية:</strong><br>
+        - حافظ على خصوصية حساباتك وكن حذرًا عند مشاركة المعلومات.</p>
+    </div>
+
+    <!-- قسم النهاية -->
+    <div id="end-section" class="end-section">
+        <h2>النهاية</h2>
+        <p>هناك ايضا طرق اختراق الوايفاي و طريقة اخرى لسرقة المعلومات لاكنها معقدة قليلا من الافضل ان نضعها عند تحديث الموقع.</p>
+    </div>
+
+    <!-- قسم الدعم -->
+    <div id="support-section" class="support-section">
+        <h2>الدعم</h2>
+        <p>إذا كنت بحاجة إلى المساعدة أو الاستفسار عن أي شيء، يمكنك التواصل معنا عبر البريد الإلكتروني: <a href="mailto:lmadani19200@gmail.com">lmadani19200@gmail.com</a>.</p>
+    </div>
+
+    <script>
+        // التبديل بين عرض المحتوى المخفي
+        function toggleVisibility(id) {
+            var element = document.getElementById(id);
+            if (element.style.display === "none" || element.style.display === "") {
+                element.style.display = "block";
+            } else {
+                element.style.display = "none";
+            }
+        }
+    </script>
+
+</body>
+</html>
